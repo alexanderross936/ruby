@@ -1,0 +1,12 @@
+puts "What is your age?"
+age = gets.chomp.to_i
+puts "At what age would you like to retire?"
+retireage = gets.chomp.to_i
+current_year = Time.new.year
+yearsuntil = retireage - age
+year = current_year + yearsuntil
+if year < current_year
+	puts "You can retire now."
+else
+puts "It is #{current_year}, you can retire in #{year}."
+end
