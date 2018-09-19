@@ -1,0 +1,35 @@
+puts "Please enter a number"
+numberone = gets.chomp
+check = false
+until check == true do
+puts "Please enter another number."
+numbertwo = gets.chomp
+numberone = numberone.to_f
+numbertwo = numbertwo.to_f
+	if numberone != numbertwo
+	check = true
+	else
+	puts "Duplicate number. Please try again."
+	end
+checktwo = false
+until checktwo == true do
+	puts "Please enter another number."
+	numberthree = gets.chomp
+	numberthree = numberthree.to_f
+		if numberthree != numbertwo || numberone != numberthree
+	checktwo = true
+		else
+			puts "Duplicate number. Please try again."
+		end
+end
+end
+if 
+	numberone > numbertwo && numberone > numberthree
+	puts "#{numberone} is the largest number."
+elsif
+	numbertwo > numberthree && numbertwo > numberone
+	puts "#{numbertwo} is the largest number."
+else
+	numberthree > numberone && numberthree > numbertwo
+	puts "#{numberthree} is the largest number."
+end
