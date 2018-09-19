@@ -1,0 +1,20 @@
+print "Who is the Author?"
+author = gets.chomp
+print "What is the quote?"
+quote = gets.chomp
+puts author + " says, "+" "+ "\"" + quote + "\" "
+
+#Part 2
+
+quoteone = "\"Money is not the only answer, but it makes a difference.\" - Barack Obama"
+quotetwo = "\"Be yourself. Everybody else is already taken\" - Oscar Wilde"
+quotethree = "\"So many books. So little time.\" - Frank Zappa"
+quotefour = "\"A room without books is like a body without a soul.\" - Marcus Cicero"
+quotefive = "\"Be the change you wish to see in the world.\" - Mahatma Ghandi"
+quotesix = "\"If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.\" - J.K. Rowling"
+quoteseven = "\"Accept who you are. Unless you are a serial killer\" - Ellen Degeneres"
+quoteeight = "\"When life gives you lemons, squirt someone in the eye.\" - Cathy Guiswite"
+quotenine = "\"If a book about failures doesn't sell, is it about success?\" - Jerry Sienfeld"
+quoteten = "\"I have never let my schooling interfere with my education.\" - Mark Twain"
+quotes = [quoteone, quotetwo, quotethree, quotefour, quotefive, quotesix, quoteseven, quoteeight, quotenine, quoteten]
+puts quotes.sample
