@@ -1,0 +1,12 @@
+def isAnagram
+puts "Please enter a word."
+arrayone = gets.chomp.scan /\w/
+puts "Please enter another word."
+arraytwo = gets.chomp.scan /\w/
+	if arrayone.sort == arraytwo.sort && arrayone.length == arraytwo.length
+		puts "Your words are anagrams."
+	else
+		puts "Your characters do not match."
+	end
+end
+puts isAnagram
