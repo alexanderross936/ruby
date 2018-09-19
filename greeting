@@ -1,0 +1,9 @@
+puts "What is your name?"
+name = gets.chomp
+if name[0] == "J"
+puts "Hello #{name}, nice to meet you."
+elsif name[0] == "A"
+puts "Hello #{name}, happy to meet you."
+else
+puts "Good day, #{name}"
+end
