@@ -1,0 +1,25 @@
+puts "Enter the price of item 1."
+pone = gets.chomp.to_f
+puts "Enter the quantity of item 1."
+qone = gets.chomp.to_f
+puts "Enter the price of item 2."
+ptwo = gets.chomp.to_f
+puts "Enter the quantity of item 2."
+qtwo = gets.chomp.to_f
+puts "Enter the price of item 3."
+pthree = gets.chomp.to_f
+puts "Enter the quantity of item 3."
+qthree = gets.chomp.to_f
+subone = pone*qone
+subtwo = ptwo*qtwo
+subthree = pthree*qthree
+subtotal = subone + subtwo + subthree
+subtotal = subtotal.round(2)
+taxrate = ".055".to_f
+tax = subtotal*taxrate
+tax = tax.round(2)
+total = subtotal + tax
+total = total.round(2)
+puts "Subtotal: $#{subtotal}"
+puts "Tax: $#{tax}"
+puts "Total: $#{total}"
